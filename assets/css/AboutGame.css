@@ -1,0 +1,259 @@
+@import url("reset.css");
+
+*,*:before,*::after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+nav,footer,header,aside{display: block;}
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+a, a:visited{text-decoration: none;}
+img{vertical-align: top;}
+
+@font-face {
+	font-family: 'Default_SC'; 
+	src: local('Default_SC'), url('../fonts/Genshin_Impact.ttf'); 
+}
+body{
+   font-family: 'Default_SC';
+   color: #EFEAE2;
+   background: url('../../img/background.png')  0 0/cover no-repeat fixed;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.container {
+   flex: 1 1 auto;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-top: 30px;
+}
+@media (max-width:1200px) {
+   .container {
+      max-width: 970px;
+   }
+   footer {
+      flex-direction: column;
+   }
+   .logo {
+      max-width: 50%;
+      margin: 0 auto;
+   }
+   iframe{
+      height: 250px !important;
+   }
+}
+@media (max-width:1000px) {
+   .container {
+      max-width: 750px;
+   }
+   .squard img{
+      width: 70% !important; 
+   }
+   .attack img{
+      width: 70% !important;
+   }
+   iframe{
+      height: 300px !important;
+      min-width: 90% !important;
+   }
+   nav{
+      font-size: 12px !important;
+   }
+}
+@media (max-width:800px) {
+   .container {
+      max-width: none;
+   }
+   footer {
+      margin: 0 auto;
+   }
+   .logo {
+      max-width: 50%;
+      margin: 0 auto;
+   }
+}
+@media (max-width:650px) {
+   nav {
+      flex-direction: column;
+      margin: 0 auto;
+      height: 250px;
+   }
+   nav a {
+      margin: 0 auto;
+      font-size: 100px;
+   }
+   nav a:nth-child(3) {
+      order: -1;
+   }
+   .logo {
+      max-width: 50%;
+   }
+   .site_information {
+      display: inline-block !important;
+      font-size: 14px;
+      margin-left: 0 !important;
+   }
+   .site_information a {
+      display: block;
+      text-align: center;
+   }
+   footer p {
+      width: 100% !important;
+      padding-top: 5%;
+      font-size: 12px;
+   }
+      iframe {
+      height: 250px !important;
+   }
+
+}
+@media (max-width:450px){
+   iframe {
+      height: 200px !important;
+         
+   }
+}
+@media (max-width:250px){
+   iframe{
+      height: 100px !important;
+   }
+}
+@media print {
+   nav {
+      display: none !important;
+   }
+   footer {
+      display: none !important;
+   }
+   iframe{
+      display: none !important;
+   }
+   main{
+      margin-bottom: 0% !important;
+   }
+}
+.content-top_navigation_img {
+   display: block;
+   width: 100px;
+}
+nav {
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0 auto;
+}
+nav a {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 150%;
+   line-height: 29px;
+   color: #FFFFFF;
+   letter-spacing: 3px;
+}
+iframe{
+   display: block;
+   margin: 0 auto;
+   border-radius: 10px;
+   width: 60%;
+   height: 350px;
+   margin-bottom: 10%;
+}
+main{
+   margin: 7%;
+}
+h1, h2{
+   font-size: 24px;
+   padding: 0 0 0 40px;
+   background: url('../../img/Rectangle\ 12.svg') 6px 50% no-repeat, url('../../img/Rectangle\ 11.svg') 0 50% no-repeat;
+}
+.squard img{
+   display: block;
+   width: 50%;
+   margin: 20px auto;
+   border-radius: 10px;
+   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+}
+ul{
+   list-style-type: disc;
+}
+li{
+   padding: 2%;
+}
+main p{
+   text-align: center;
+   margin: 30px 0;
+   line-height: 2em;
+}
+.attack img{
+   display: block;
+   width: 50%;
+   margin: 20px auto;
+   border-radius: 10px;
+   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.41);
+}
+footer {
+   display: flex;
+   justify-content: space-between;
+   background: url('../../img/Footer.png') 0 0/cover no-repeat;
+   width: 100%;
+   padding: 2% 5%;
+   flex-wrap: nowrap;
+}
+.logo {
+   display: flex;
+   justify-content: space-between;
+}
+.logo img {
+   width: 40%;
+}
+.social_network {
+   border-bottom: solid 2px rgba(204, 204, 204, 0.616);
+   display: flex;
+   justify-content: space-evenly;
+}
+footer a {
+   display: inline-block;
+   opacity: 0.6;
+   color: rgba(204, 204, 204, 0.616);
+}
+.social_network img {
+   width: 30px;
+}
+.site_information {
+   display: inline-grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: 1fr 1fr 1fr;
+   width: 90%;
+   align-self: center;
+   margin-top: 3%;
+   margin-left: 5%;
+   justify-content: space-around;
+}
+.site_information a {
+   margin-bottom: 5%;
+}
+footer a:hover {
+   opacity: 1;
+}
+footer p {
+   color: rgba(204, 204, 204, 0.616);
+   align-self: flex-end;
+   width: 30%;
+   text-align: right;
+}
